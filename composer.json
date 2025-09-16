@@ -1,0 +1,6 @@
+{
+    "require": {
+        "sendinblue/api-v3-sdk": "^7.2",
+        "sendgrid/sendgrid": "^8.0"
+    }
+}

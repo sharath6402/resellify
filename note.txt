@@ -1,0 +1,14 @@
+it fetech row by row
+
+mysqli_fetch_assoc($result)
+
+ex:
+$conn = new Connection();
+
+    $sql = "select * from user";
+    $result = $conn->mysqli->execute_query($sql);
+    $resultArray = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        array_push($resultArray, $row);
+    }
+    echo json_encode($resultArray);
